@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: estate-video
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: RUNWAYML_API_SECRET
+        sync: false
+      - key: ACCESS_CODE
+        sync: false
